@@ -446,7 +446,7 @@ static gint launch_xmms(void) {
   case 0:
     execlp("xmms", "xmms", NULL);
     fprintf(stderr, "xmms not found!\n");
-    exit(0);
+    exit(1);
 
   default:
     for( tries = 0 ; tries < 10 ; tries++ ) {
