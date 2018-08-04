@@ -54,7 +54,6 @@ static gboolean is_stream_playing(gint);
 
 /* simple commands, argument is the session number */
 static void print_help(gint);          /* print help   */
-static void print_volume(gint);        /* print volume */
 
 /* commands needing an argument, arguments are session number and the read string argument */
 static void set_vol(gint,char*);       /* set the volume */
