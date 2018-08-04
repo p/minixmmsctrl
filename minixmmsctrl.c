@@ -66,7 +66,6 @@ typedef struct {
 } CondString;
 
 CondString *condStrings = NULL;
-int nbCondStrings = 0;
 int nbEq = 0;
 int nbNEq = 0;
 
@@ -338,20 +337,6 @@ static void set_time(gint session, char *arg) {
   
   xmms_remote_jump_to_time( session, ptime );
 }
-
-
-
-/*
- * ensure capacity of the string table
- */
-static void ensure_capa(int i) {
-  if (i >= nbCondStrings) {
-    condStrings = (CondString*) realloc(condStrings, (i+10)*sizeof(CondString));
-    memset(&condStrings[i], 0, (i+10-nbCondStrings)*sizeof(CondString));
-    nbCondStrings = i+10;
-  }
-}
-
 
 
 /*
