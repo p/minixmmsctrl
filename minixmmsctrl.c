@@ -232,8 +232,8 @@ ArgCommand argcom[]={
  */
 static void print_version(void)
 {
-	puts("MiniXMMSctrl 0.1 -- A micor-remote for XMMS.\n"
-	     "Written by Segin, and based off of XMMSCTRL.\n");
+	puts("MiniXMMSctrl 0.1 -- A micro-remote for XMMS.\n"
+	     "Written by Segin, and based on XMMSCTRL.\n");
 	exit(0);
 }
 
